@@ -1,0 +1,58 @@
+{
+  "run_dir": "runs/test_iv/neural_operator_demo",
+  "preset": "default",
+  "backbones": [
+    "cnn",
+    "fno"
+  ],
+  "split_summary": {
+    "split": "stratified_holdout_90_10",
+    "combined_size": 37500,
+    "train_size": 33750,
+    "val_size": 3750,
+    "combined_counts": {
+      "no": 12500,
+      "sphere": 12500,
+      "vort": 12500
+    },
+    "train_counts": {
+      "no": 11250,
+      "sphere": 11250,
+      "vort": 11250
+    },
+    "val_counts": {
+      "no": 1250,
+      "sphere": 1250,
+      "vort": 1250
+    }
+  },
+  "results": {
+    "cnn": {
+      "loss": 0.28055390625,
+      "accuracy": 0.9189333333333334,
+      "macro_auc": 0.98451184,
+      "best_epoch": 16,
+      "num_parameters": 283635,
+      "per_class_auc": {
+        "no": 0.98912048,
+        "sphere": 0.9784769600000001,
+        "vort": 0.9859380799999999
+      }
+    },
+    "fno": {
+      "loss": 0.33044609375,
+      "accuracy": 0.8981333333333333,
+      "macro_auc": 0.9773902400000001,
+      "best_epoch": 46,
+      "num_parameters": 9489843,
+      "per_class_auc": {
+        "no": 0.98486352,
+        "sphere": 0.9687630400000001,
+        "vort": 0.97854416
+      }
+    }
+  },
+  "best_backbone": "cnn",
+  "macro_auc_delta_fno_vs_cnn": -0.00712159999999995,
+  "accuracy_delta_fno_vs_cnn": -0.02080000000000004
+}

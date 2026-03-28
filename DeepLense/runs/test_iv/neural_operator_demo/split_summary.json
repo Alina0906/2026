@@ -1,0 +1,21 @@
+{
+  "split": "stratified_holdout_90_10",
+  "combined_size": 37500,
+  "train_size": 33750,
+  "val_size": 3750,
+  "combined_counts": {
+    "no": 12500,
+    "sphere": 12500,
+    "vort": 12500
+  },
+  "train_counts": {
+    "no": 11250,
+    "sphere": 11250,
+    "vort": 11250
+  },
+  "val_counts": {
+    "no": 1250,
+    "sphere": 1250,
+    "vort": 1250
+  }
+}
